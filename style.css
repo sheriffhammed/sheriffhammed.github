@@ -4,6 +4,7 @@
 body {
 
     font-family: 'Oswald', sans-serif;
+    background-color: lightblue;
 }
 
 .header {
@@ -47,7 +48,7 @@ li+li::before{
 .wrapper{
   max-width: 85%; 
   border-radius: 2px;
-  border-color: bisque;
+  border-color: grey;
   border-style: solid;
   margin: 30px auto;
   padding: 10px;
