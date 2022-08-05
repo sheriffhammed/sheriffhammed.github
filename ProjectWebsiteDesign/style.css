@@ -18,6 +18,7 @@ body {
   font-family: Verdana, sans-serif;
   font-size: 900;
   font-weight: bold;
+  
 }
 
 .header .logo {
@@ -53,6 +54,7 @@ li+li::before{
   margin: 30px auto;
   padding: 10px;
   text-align: center;
+  
 }
 .wrapper .crimson{
   width: 20%;
@@ -60,7 +62,7 @@ li+li::before{
   text-align: center;
   display: inline-block;
   margin: 20px;
-  
+  color: white;
 }
 .wrapper .blueviolet{
   width: 20%;
@@ -68,6 +70,7 @@ li+li::before{
   text-align: center;
   display: inline-block;
   margin: 20px;
+  color: white;
 }
 .wrapper .goldenrod{
   width: 20%;
@@ -75,6 +78,7 @@ li+li::before{
   text-align: center;
   display: inline-block;
   margin: 20px;
+  color: white;
 }
 
 .wrapper .maroon{
@@ -83,6 +87,7 @@ li+li::before{
   text-align: center;
   display: inline-block;
   margin: 20px;
+  color: white;
 }
 
 
