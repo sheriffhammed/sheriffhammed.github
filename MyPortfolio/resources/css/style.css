@@ -1,0 +1,425 @@
+* {box-sizing: border-box;}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+ 
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 940px; 
+  padding: 0 10px;
+  
+}
+
+.container img{
+  border: 1px solid blue;
+  padding: 10px;
+  
+}
+
+header {  display: flex;
+  align-items: center;
+  padding: .5rem 3.75rem;
+  background-color: #000;
+  
+}
+
+header .logo-small {
+  display: none;
+}
+
+header .logo-small,
+header .logo-big {
+  flex-grow: 1;
+  opacity: 0.5;
+}
+nav li{
+  color: #fff;
+  background: #000;
+  padding: 10px 40px;
+  text-decoration: none; 
+  transition: background .5s; 
+  opacity: 0.5;
+  font-weight: bold;
+}
+nav li {
+  display: inline;
+  margin-right: 25px;
+  text-align: center;
+  border-radius: 5px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+nav li:hover{
+  background: #117bff;
+  cursor: pointer; 
+  transition: background .5s;  
+  color: white;
+}
+
+
+.header h1 {
+  color: #fff;
+  line-height: 100px; 
+  font-size: 80px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  text-transform:uppercase; 
+  
+}
+
+.header p {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-transform: uppercase; 
+}
+
+.btn {
+  color: #fff;
+  background: #117bff;
+  padding: 10px 40px;
+  text-decoration: none; 
+  transition: background .5s; 
+  border-radius: 10px;
+}
+
+
+.btn:hover {
+  background: #117bff;
+  cursor: pointer; 
+  transition: background .5s;  
+}
+
+.main .container {
+  margin: 80px auto;
+}
+
+.main img {
+  float: left;
+  margin: 10px 80px 50px 0;
+}
+
+.jumbotron {
+  background: url(../images/banner.png) center center;
+  background-size: cover;
+  height: 500px; 
+  margin-top: 0px;
+  background-color: #000;
+}
+
+.jumbotron .container {
+  position: relative;
+  top: 100px;
+  left: 0px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  text-align: left; 
+  text-shadow: 2px 2px #000;;
+  text-transform: uppercase;
+}
+
+.jumbotron p {
+  color: #fff; 
+  text-align: left; 
+  font-size: x-large;
+  text-shadow: 2px 2px #000;
+}
+
+.jumbotron .btn {
+  margin: 10px 0 0;
+  float: left; 
+}
+
+footer { 
+  background: #000;
+  width: 100%;
+  
+}
+
+footer p { 
+  color: #fff;
+  font-size: 14px;  
+  
+}
+
+.latestProject{
+  background-color: white;
+  width: 100%;
+}
+
+.team, .latestProject, .services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.team h2{
+  display: block;
+}
+.col {
+  display: inline-flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+.col img{
+  width: 200px;
+  height: 150px;
+  padding: 10px;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.col img:hover{
+  border: 3px solid #117bff;
+  width: 205px;
+  height: 155px;
+  padding: 10px;
+}
+
+
+
+@media only screen and (max-width: 560px) {
+  footer {
+    padding: 4.8125rem 15% 0 15%;
+  }
+}
+@media only screen and (max-width: 990px) {
+  header .logo-big {
+    display: none;
+  }
+
+  header .logo-small {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  header .logo-small {
+    margin-bottom: 1rem;
+  }
+  .latestproject .latestcol{
+    display: block;
+  }
+  nav li {
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+  }
+  #socialMedia{
+    display: block;
+  }
+  .services .cols .item {
+    display: none;
+  }
+  .services .cols .item img{
+    display: block;
+  }
+  .container img{
+    display: none;
+  } 
+  .team .col{
+    display: none;
+  }
+  #myServices{
+    display: none;
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    
+  }
+  .contactContainer {
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    
+  }
+
+}
+@media (min-width:850px) {
+  .header h1 {
+    font-size: 120px;
+  }
+ 
+  
+  .services .cols .item{
+    width: 50px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .main, .jumbotron {
+    padding: 0 30px;
+  }
+
+  .main img {
+    display: none;
+  }
+  header nav{
+    display: none;
+  }
+  
+
+  p{
+    text-align: center;
+  }
+}
+
+
+
+.latestcol {
+  display: inline-flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-left: 150px;
+  
+}
+
+.latestcol img{
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+ 
+}
+
+.latestcol .item{
+  width: 300px;
+  height: 250px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 20px;
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+.services .cols{
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: #000;
+  width: 100%;
+  opacity: 0.5;
+}
+.services .cols .item{
+  width: 180px;
+  height: 200px;
+  padding: 10px;
+  margin: 70px;
+}
+
+.cols img:hover{
+  border: 3px solid #117bff;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+}
+.services p{
+ font-weight: bold;
+
+}
+
+/*Portfolio Section*/
+.pcontainer {
+  margin: 0 auto;
+}
+
+.pmain {
+  background-color: whitesmoke;
+}
+
+.cards {
+  background-color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.pcol {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#portfolio {
+  padding: 20px;
+  background-color: whitesmoke;
+  margin: 0;
+  text-align: center;
+  color: grey;
+}
+#myServices {
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+  color: grey;
+}
+.spacer {
+  max-width: 1200px;
+  margin: auto;
+}
+ /* Contact Form */
+ input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #117bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #000;
+}
+
+.contactContainer {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  margin-left: 500px;
+}
+
