@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Task</title>
+  
+  <link rel="stylesheet" type="text/css" href="libs/css/style.css" />
+ 
+</head>
+
+	<body>
+		
+	
+		<br><br>
+
+		<div class="container">
+			<table>
+				<thead>
+					<tr>
+						<th>API Name</th>
+						<th>API Description</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Find Nearby </td>
+						<td>Latitude: <input type="text" id="latnearby" name="latNearby">
+							Longtitude: <input type="text" id="lngnearby" name="lngNearby">
+						</td>
+						<td><button id="findNearby">Submit</button></td>
+					</tr>
+					<tr>
+						<td>Find Nearby Streets</td>
+						<td>Latitude: <input type="text" id="lat" name="lat">
+							Longtitude: <input type="text" id="lng" name="lng">
+						</td>
+						<td><button id="findNearbyStreets">Submit</button></td>
+					</tr>
+					
+					<tr>
+						<td>Find Nearby Postal Codes</td>
+						<td>Postal Code: <input type="text" id="postalcode" name="postalcode">
+							Radius: <input type="text" id="radius" name="radius">
+							Country:<select id="country">
+								<option value="GB">Great Britain</option>
+								<option value="FR">France</option>
+								<option value="DE">Germany</option>
+								<option value="US">USA</option>
+							</select>
+						</td>
+						<td><button id="findNearbyPostalCodes">Submit</button></td>
+					</tr>
+					
+					<tr>
+						<td colspan="3"> <h1>Result:</h1>
+							<table class="result">
+								
+								<thead class="tableHeader">
+									
+								</thead>
+								
+								<tbody class="tableData">
+								</tbody>
+							
+							</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+		</div>
+
+		<script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="libs/js/script.js"></script>
+
+	</body>
+
+</html>
